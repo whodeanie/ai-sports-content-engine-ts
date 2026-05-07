@@ -1,0 +1,40 @@
+{
+  "name": "ai-sports-content-engine-ts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI sports content engine. Generates previews, betting analysis, and recaps using Claude. Educational use only.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate": "tsx src/scripts/generate-cli.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.32.1",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "@typescript-eslint/eslint-plugin": "8.13.0",
+    "@typescript-eslint/parser": "8.13.0",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.3",
+    "prettier": "3.3.3",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vitest": "2.1.4"
+  }
+}
