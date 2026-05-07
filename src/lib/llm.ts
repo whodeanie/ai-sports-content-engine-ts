@@ -5,9 +5,9 @@
  */
 import OpenAI from "openai";
 import { z } from "zod";
-import type { ArticleKind, GameContext, GeneratedArticle } from "./types.js";
-import { systemPromptFor } from "../prompts/system.js";
-import { userPromptFor } from "../prompts/user.js";
+import type { ArticleKind, GameContext, GeneratedArticle } from "./types";
+import { systemPromptFor } from "../prompts/system";
+import { userPromptFor } from "../prompts/user";
 
 const ArticleResponseSchema = z.object({
   title: z.string(),

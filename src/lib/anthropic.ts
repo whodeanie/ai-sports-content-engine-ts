@@ -3,4 +3,4 @@
  * which talks to Groq via the OpenAI compatible endpoint. This file is kept
  * around so existing imports keep working until callers migrate.
  */
-export * from "./llm.js";
+export * from "./llm";

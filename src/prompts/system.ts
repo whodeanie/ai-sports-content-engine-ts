@@ -4,7 +4,7 @@
  *   2. Tone, length, and section count constraints.
  *   3. A required disclaimer for betting analysis.
  */
-import type { ArticleKind } from "../lib/types.js";
+import type { ArticleKind } from "../lib/types";
 
 const COMMON = `
 You are a sports writing assistant. Output valid JSON matching the schema below

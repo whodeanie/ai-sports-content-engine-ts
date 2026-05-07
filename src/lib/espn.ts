@@ -8,7 +8,7 @@
  * Heuristic: we look up teams by displayName or abbreviation case insensitively.
  */
 import { z } from "zod";
-import type { GameContext, ScoreboardGame, Sport, TeamSummary } from "./types.js";
+import type { GameContext, ScoreboardGame, Sport, TeamSummary } from "./types";
 
 const SPORT_PATH: Record<Sport, string> = {
   nfl: "football/nfl",

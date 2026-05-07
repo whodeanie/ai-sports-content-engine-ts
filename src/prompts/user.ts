@@ -1,9 +1,9 @@
 /**
- * Builds the user prompt. The Claude SDK call sends the system prompt plus
+ * Builds the user prompt. The Groq call sends the system prompt plus
  * this string. Keeping the user prompt small and structured (one team summary
  * per side, scoreboard if available) reduces tokens and improves reliability.
  */
-import type { GameContext } from "../lib/types.js";
+import type { GameContext } from "../lib/types";
 
 export function userPromptFor(ctx: GameContext, gameDate: string): string {
   const sb = ctx.scoreboard;

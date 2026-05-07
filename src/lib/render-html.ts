@@ -2,7 +2,7 @@
  * Render a GeneratedArticle to a polished standalone HTML page.
  * Inline CSS so the file is portable. No external assets.
  */
-import type { GeneratedArticle } from "./types.js";
+import type { GeneratedArticle } from "./types";
 
 function escape(s: string): string {
   return s
