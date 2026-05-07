@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { generateArticle } from "@/lib/anthropic";
+import { generateArticle } from "@/lib/llm";
 import { buildGameContext } from "@/lib/espn";
 import { renderArticleHtml } from "@/lib/render-html";
 import { GenerateRequestSchema } from "@/lib/types";

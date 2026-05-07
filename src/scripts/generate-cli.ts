@@ -6,7 +6,7 @@
  */
 import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { generateArticle } from "../lib/anthropic.js";
+import { generateArticle } from "../lib/llm.js";
 import { buildGameContext } from "../lib/espn.js";
 import { renderArticleHtml } from "../lib/render-html.js";
 import { GenerateRequestSchema } from "../lib/types.js";
@@ -63,7 +63,7 @@ async function main(): Promise<void> {
     date: req.gameDate,
   });
 
-  console.log(`[gen] calling Claude (${req.kind})`);
+  console.log(`[gen] calling Groq (${req.kind})`);
   const article = await generateArticle({ ctx, kind: req.kind, gameDate: req.gameDate });
   const html = renderArticleHtml(article);
 

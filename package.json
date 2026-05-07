@@ -2,7 +2,7 @@
   "name": "ai-sports-content-engine-ts",
   "version": "0.1.0",
   "private": true,
-  "description": "AI sports content engine. Generates previews, betting analysis, and recaps using Claude. Educational use only.",
+  "description": "AI sports content engine. Generates previews, betting analysis, and recaps using Groq (Llama 3.3 70B). Educational use only.",
   "license": "MIT",
   "engines": {
     "node": ">=20"
@@ -18,8 +18,8 @@
     "generate": "tsx src/scripts/generate-cli.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "0.32.1",
     "next": "15.1.6",
+    "openai": "4.78.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "zod": "3.23.8"
