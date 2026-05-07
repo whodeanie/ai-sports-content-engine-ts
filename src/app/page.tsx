@@ -49,9 +49,9 @@ export default function HomePage() {
     <main>
       <h1>AI sports content engine</h1>
       <p className="muted">
-        Pulls team and game context from ESPN free endpoints, structures the prompt for Claude
-        Sonnet 4.6, and renders a polished HTML article. Costs roughly two and a half cents per
-        article at current Sonnet 4.6 pricing.
+        Pulls team and game context from ESPN free endpoints, structures the prompt for Llama 3.3
+        70B via Groq, and renders a polished HTML article. Free inference on the Groq daily token
+        budget, with deterministic fallback when the budget is exhausted.
       </p>
 
       <div className="card row">
